@@ -62,3 +62,16 @@ input.cube-size:last-child {
 form {
   margin-bottom: 0;
 }
+
+footer {
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #303030;
+}
