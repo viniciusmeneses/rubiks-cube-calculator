@@ -6,7 +6,6 @@
       "keyup",
       function() {
         $inputs[1].value = this.value;
-        console.log("a");
       },
       false
     );
@@ -15,7 +14,6 @@
       "keyup",
       function() {
         $inputs[0].value = this.value;
-        console.log("a");
       },
       false
     );
@@ -37,7 +35,6 @@
   }
 
   function calculateCombinations(cubeSize) {
-    console.log(cubeSize);
     const firstPartTop = new BigNumber("24")
       .multipliedBy(new BigNumber(factorial(12)))
       .multipliedBy(new BigNumber("2").pow(new BigNumber("10")))
