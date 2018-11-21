@@ -10,28 +10,61 @@
     <meta name="author" content="Vinicius Meneses (vini23hot@gmail.com)" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      href="http://fonts.googleapis.com/css?family=Raleway:400,300,600"
       rel="stylesheet"
       type="text/css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="one-half column" style="margin-top: 25%">
-          <h4>Basic Page</h4>
-          <p>
-            This index.html page is a placeholder with the CSS, font and
-            favicon. It's just waiting for you to add some content! If you need
-            some help hit up the
-            <a href="http://www.getskeleton.com">Skeleton documentation</a>.
-          </p>
+        <div class="column"><h1 class="title">Rubik's Cube Calculator</h1></div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <form>
+            <div class="row">
+              <div class="column cube-form">
+                <input
+                  class="cube-size"
+                  type="number"
+                  placeholder="Size..."
+                  id="cube-input-1"
+                  name="cube-input-1"
+                />
+                <span class="cube-separator"> X </span>
+                <input
+                  class="cube-size"
+                  type="number"
+                  name="cube-input-2"
+                  placeholder="Size..."
+                  id="cube-input-2"
+                />
+                <button class="cube-send" type="submit">Calculate</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column cube-result">
+          <input
+            class="cube-size"
+            type="text"
+            placeholder="Possible combinations..."
+            id="cube-result"
+            readonly
+          />
         </div>
       </div>
     </div>
 
+    <script src="js/vendor/bignumber.min.js"></script>
+    <script src="js/vendor/factorial.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
