@@ -10,12 +10,16 @@
 
 [**Demo available here!**](http://rubiks-cube-calculator.surge.sh/)
 
-![Preview Image](preview.png)
+<p align="center">
+  <img src="preview.png" alt="Preview">
+</p>
 
 ## How is it calculated?
 
 The possible combinations is calculated using the Rubik's Cube size typed in the formula below:
 
-![Formula](formula.jpg)
-
 **n = Rubik's Cube size**
+
+<p align="center">
+  <img src="formula.jpg" alt="Formula">
+</p>
