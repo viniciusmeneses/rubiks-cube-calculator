@@ -10,9 +10,13 @@
   function addInputListener(input) {
     input.onkeyup = duplicateValue;
     input.onchange = duplicateValue;
+    console.dir(input)
   }
 
   function duplicateValue() {
+    if (this.value <= 0) {
+      this.value = 1
+    }
     $inputs[Array.from($inputs).indexOf(this) === 0 ? 1 : 0].value = this.value;
   }
 
