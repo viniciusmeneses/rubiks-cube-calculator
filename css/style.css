@@ -38,6 +38,11 @@ button.cube-send {
   margin-left: 10px;
 }
 
+button.cube-send.loading {
+  background:url(../img/loading.gif) no-repeat center center;
+  color: transparent;
+}
+
 .cube-form {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
